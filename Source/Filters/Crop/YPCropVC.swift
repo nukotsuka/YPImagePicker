@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum YPCropType {
+public enum YPCropType: Equatable {
     case none
     case rectangle(ratio: Double)
 }
