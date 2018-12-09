@@ -38,7 +38,7 @@ public class YPSelectionsGalleryVC: UIViewController {
         v.collectionView.delegate = self
         
         // Setup navigation bar
-        let rightBarButtonTitle = YPConfig.dismissAfterPicking ? YPConfig.wordings.save : YPConfig.wordings.next
+        let rightBarButtonTitle = YPConfig.dismissAfterPicking ? YPConfig.wordings.done : YPConfig.wordings.next
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: rightBarButtonTitle,
                                                             style: .done,
                                                             target: self,

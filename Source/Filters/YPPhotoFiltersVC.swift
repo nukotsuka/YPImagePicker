@@ -101,10 +101,8 @@ open class YPPhotoFiltersVC: UIViewController, IsMediaFilterVC, UIGestureRecogni
     
     fileprivate func setupRightBarButton() {
         let rightBarButtonTitle: String
-        if isFromSelectionVC {
+        if isFromSelectionVC || (YPConfig.showsCrop == YPCropType.none && YPConfig.dismissAfterPicking) {
             rightBarButtonTitle = YPConfig.wordings.done
-        } else if YPConfig.showsCrop == YPCropType.none && YPConfig.dismissAfterPicking {
-            rightBarButtonTitle = YPConfig.wordings.save
         } else {
             rightBarButtonTitle = YPConfig.wordings.next
         }
